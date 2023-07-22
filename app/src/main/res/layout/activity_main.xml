@@ -27,37 +27,45 @@
         android:id="@+id/editTextEntero"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="52dp"
         android:ems="10"
         android:hint="Ingrese entero"
         android:inputType="text"
-        tools:layout_editor_absoluteX="86dp"
-        tools:layout_editor_absoluteY="119dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
 
     <EditText
         android:id="@+id/editTextTexto"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
         android:ems="10"
         android:hint="Ingrese Texto"
         android:inputType="text"
-        tools:layout_editor_absoluteX="101dp"
-        tools:layout_editor_absoluteY="263dp" />
+        app:layout_constraintEnd_toEndOf="@+id/tvMostrarEntero"
+        app:layout_constraintStart_toStartOf="@+id/tvMostrarEntero"
+        app:layout_constraintTop_toBottomOf="@+id/tvMostrarEntero" />
 
     <TextView
         android:id="@+id/tvMostrarEntero"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
         android:text="TextView"
-        tools:layout_editor_absoluteX="158dp"
-        tools:layout_editor_absoluteY="188dp" />
+        app:layout_constraintEnd_toEndOf="@+id/editTextEntero"
+        app:layout_constraintStart_toStartOf="@+id/editTextEntero"
+        app:layout_constraintTop_toBottomOf="@+id/editTextEntero" />
 
     <TextView
         android:id="@+id/tvMostrarTexto"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
         android:text="TextView"
-        tools:layout_editor_absoluteX="158dp"
-        tools:layout_editor_absoluteY="329dp" />
+        app:layout_constraintEnd_toEndOf="@+id/editTextTexto"
+        app:layout_constraintStart_toStartOf="@+id/editTextTexto"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTexto" />
 
     <Switch
         android:id="@+id/switch1"
@@ -73,7 +81,7 @@
         android:id="@+id/editTextDecimal"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="68dp"
+        android:layout_marginTop="32dp"
         android:ems="10"
         android:hint="Ingrese decimal"
         android:inputType="text"
@@ -112,7 +120,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="@+id/editTextDecimal"
         app:layout_constraintTop_toBottomOf="@+id/tvMostrarDecimal"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintVertical_bias="0.013" />
 
     <Button
         android:id="@+id/buttonBorrar"
@@ -129,8 +137,10 @@
         android:id="@+id/buttonMostrar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
         android:text="Button"
-        tools:layout_editor_absoluteX="165dp"
-        tools:layout_editor_absoluteY="658dp" />
+        app:layout_constraintEnd_toEndOf="@+id/buttonBorrar"
+        app:layout_constraintStart_toStartOf="@+id/buttonGuardar"
+        app:layout_constraintTop_toBottomOf="@+id/buttonGuardar" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
